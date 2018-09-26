@@ -1,0 +1,22 @@
+.LogParser {
+
+}
+
+.LogParser-logo {
+  height: 60px;
+}
+
+.LogParser-header {
+  background-color: #222;
+  height: 120px;
+  padding: 10px;
+  color: white;
+}
+
+.LogParser-title {
+  font-size: 1.5em;
+}
+
+.LogParser-intro {
+  font-size: large;
+}
