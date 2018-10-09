@@ -67,9 +67,9 @@ fs.readFile(logFile, 'utf8', (error, content) => {
       if (!newCategory && resultArray[1].match(/^\ ?$/) === null) configData[currentCategory].push({ key: resultArray[1], value: resultArray[2] });
     }
 
-    console.log('SUMMARY');
-    console.log(summaryData);
     console.log('CONFIG');
     console.log(configData);
+    console.log('SUMMARY');
+    console.log(summaryData);
   }
 });
