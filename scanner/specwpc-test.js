@@ -1,6 +1,16 @@
 const fs = require('fs');
 
 const logFile = 'Z:\\Benchmark Data\\In Progress Benchmark Data\\Competitive Analysis\\TWR_P330_E-2146G_2x16GB_P4000\\SPECwpc\\results_20180928T1827_r1\\resultHTML.html';
+// const logFile = 'Z:\\Benchmark Data\\In Progress Benchmark Data\\Competitive Analysis\\TWR_P330_E-2146G_2x16GB_P4000\\SPECwpc\\results_20180929T0032_r2\\resultHTML.html';
+// const logFile = 'Z:\\Benchmark Data\\In Progress Benchmark Data\\Competitive Analysis\\TWR_P330_E-2146G_2x16GB_P4000\\SPECwpc\\results_20180929T0638_r3\\resultHTML.html';
+
+// const logFile = 'Z:\\Benchmark Data\\In Progress Benchmark Data\\Competitive Analysis\\TWR_Dell 3630_E-2146G_2x16GB_P4000\\SPECwpc\\results_20180928T1839_r1\\resultHTML.html';
+// const logFile = 'Z:\\Benchmark Data\\In Progress Benchmark Data\\Competitive Analysis\\TWR_Dell 3630_E-2146G_2x16GB_P4000\\SPECwpc\\results_20180929T0046_r2\\resultHTML.html';
+// const logFile = 'Z:\\Benchmark Data\\In Progress Benchmark Data\\Competitive Analysis\\TWR_Dell 3630_E-2146G_2x16GB_P4000\\SPECwpc\\results_20180929T0653_r3\\resultHTML.html';
+
+// const logFile = 'Z:\\Benchmark Data\\In Progress Benchmark Data\\Competitive Analysis\\TWR_HP Z2_E-2146G_2x16GB_P4000\\SPECwpc\\results_20180928T1853_r1\\resultHTML.html';
+// const logFile = 'Z:\\Benchmark Data\\In Progress Benchmark Data\\Competitive Analysis\\TWR_HP Z2_E-2146G_2x16GB_P4000\\SPECwpc\\results_20180929T0111_r2\\resultHTML.html';
+// const logFile = 'Z:\\Benchmark Data\\In Progress Benchmark Data\\Competitive Analysis\\TWR_HP Z2_E-2146G_2x16GB_P4000\\SPECwpc\\results_20180929T0724_r3\\resultHTML.html';
 
 const regexSummaryContent = /<div class="tabContent" id="tabContent_1">(.*?)<\/div>/s;
 const regexSummaryRow = /<tr><td>(.+?)<\/td><td>(.+?)<\/td><td>.*?<\/td><td>(.*?)<\/td><td>(.*?)<\/td><\/tr>/g;
