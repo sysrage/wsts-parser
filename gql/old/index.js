@@ -19,8 +19,8 @@ const schema = buildASTSchema(gql`
   }
 `);
 
-// const baseDir = 'Z:\\Benchmark Data\\In Progress Benchmark Data\\';
-const baseDir = '../scanner/sample/';
+const baseDir = 'Z:\\Benchmark Data\\In Progress Benchmark Data\\';
+// const baseDir = '../scanner/sample/';
 
 const getDirs = () => {
   const dirs = p => readdirSync(p).filter(f => statSync(path.join(p, f)).isDirectory());
