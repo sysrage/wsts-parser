@@ -167,6 +167,3 @@ const iometer = (logFile) => {
 };
 
 module.exports = iometer;
-
-const tempLogFile = 'C:\\Users\\bbothwell5\\Downloads\\Working\\iometer-auto-norest-rdfc\\p330-tower-auto-pass1\\rnd-read-1GB\\iometer-rnd-read-1GB.csv';
-iometer(tempLogFile).then((result) => { console.log(result) }, (error) => { console.log(error) });

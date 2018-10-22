@@ -48,6 +48,3 @@ const passmark = (logFile) => {
 };
 
 module.exports = passmark;
-
-const tempLogFile = 'Z:\\Benchmark Data\\In Progress Benchmark Data\\Competitive Analysis\\TWR_P330_E-2146G_2x16GB_P4000\\P330_E2146G_2x16GB_256GB-P981_P4000_PM9.txt';
-passmark(tempLogFile).then((result) => { console.log(result) }, (error) => { console.log(error) });

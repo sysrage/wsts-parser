@@ -83,6 +83,3 @@ const specwpc = (logFile) => {
 };
 
 module.exports = specwpc;
-
-const tempLogFile = 'Z:\\Benchmark Data\\In Progress Benchmark Data\\Competitive Analysis\\TWR_P330_E-2146G_2x16GB_P4000\\SPECwpc\\results_20180928T1827_r1\\resultHTML.html';
-specwpc(tempLogFile).then((result) => { console.log(result) }, (error) => { console.log(error) });
