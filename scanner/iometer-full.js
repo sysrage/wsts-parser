@@ -279,7 +279,7 @@ if (fs.lstatSync(inputFile).isDirectory()) {
           }
         }
       }
-      wb.write(testInputDirMany.substring(testInputDirMany.search('/') + 1, testInputDirMany.length) + '.xlsx');
+      wb.write(path.resolve(rootLogDir, '../output/', testInputDirMany.substring(testInputDirMany.search('/') + 1, testInputDirMany.length) + '.xlsx'));
 
 
     }, (error) => { console.log(error) });
@@ -289,18 +289,3 @@ if (fs.lstatSync(inputFile).isDirectory()) {
   // **TODO: Cleanup (determine/verify file type, etc.)
   parsers['iometer'](inputFile).then((result) => { console.log(result) }, (error) => { console.log(error) });
 }
-
-
-
-// *** Tests
-// const iometerLogFile = 'C:\\Users\\bbothwell5\\Downloads\\Working\\iometer-auto-norest-rdfc\\p330-tower-auto-pass1\\rnd-read-1GB\\iometer-rnd-read-1GB.csv';
-// parsers['iometer'](iometerLogFile).then((result) => { console.log(result) }, (error) => { console.log(error) });
-
-// const passmarkLogFile = 'Z:\\Benchmark Data\\In Progress Benchmark Data\\Competitive Analysis\\TWR_P330_E-2146G_2x16GB_P4000\\P330_E2146G_2x16GB_256GB-P981_P4000_PM9.txt';
-// parsers['passmark'](passmarkLogFile).then((result) => { console.log(result) }, (error) => { console.log(error) });
-
-// const specviewperfLogFile = 'Z:\\Benchmark Data\\In Progress Benchmark Data\\Competitive Analysis\\TWR_P330_E-2146G_2x16GB_P4000\\SPECviewperf\\results_20181001T094205\\SPECviewperf_results.json';
-// parsers['specviewperf'](specviewperfLogFile).then((result) => { console.log(result) }, (error) => { console.log(error) });
-
-// const specwpcLogFile = 'Z:\\Benchmark Data\\In Progress Benchmark Data\\Competitive Analysis\\TWR_P330_E-2146G_2x16GB_P4000\\SPECwpc\\results_20180928T1827_r1\\resultHTML.html';
-// parsers['specwpc'](specwpcLogFile).then((result) => { console.log(result) }, (error) => { console.log(error) });
